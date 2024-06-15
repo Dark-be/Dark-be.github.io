@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark-be HomePage</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>WOWOWOWOWOWOWOWOWOW</h1>
+    </header>
+    <main>
+        <div class="section-row">
+            <section class="section" id="s_0">
+                
+            </section>
+            <script>
+                fetch('./Git.md')
+                .then(response => response.text())
+                .then(data => {
+                  // 使用 marked 解析 markdown
+                  const html = marked(data);
+                  // 将解析后的 HTML 插入到指定的元素中
+                  document.querySelector('s_0').innerHTML = html;
+                });</script>
+            <section class="section">
+                
+            </section>
+        </div>
+        <div class="section-row">
+            <section class="section">
+                
+            </section>
+            <section class="section">
+                
+            </section>
+        <div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>
